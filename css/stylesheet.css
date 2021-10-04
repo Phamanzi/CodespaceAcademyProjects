@@ -1,0 +1,140 @@
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Roboto, sans-serif, Ariel;  
+  scroll-behavior: smooth;   
+  width: 100%;
+  margin: 0;    
+}
+
+.about {
+  font-size: larger;
+}
+  
+footer {
+  text-align: center;
+  background-color: white;
+  color: white;    
+}
+
+.animation:hover {
+  filter: opacity(50%); 
+}
+
+.button-colour {
+  background-color: #4a2545;
+  border: 0;
+}
+.link-colour {
+  color:black;
+}
+.button-colour:hover {
+  background-color: #dccca3;
+}
+
+.link-colour:hover {
+  color: #21e721;
+  font-weight: bolder;
+}
+
+#about-section {
+  clear: both;
+  display: block;
+
+}
+footer >ul>a>img{
+  height:50px;
+  width: 3rem;
+  margin: 0.5rem;
+
+
+}
+
+#background {
+  background-image: url("/images/phamy.jpg"); 
+  background-color: #21e721;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.line {
+  border: 2px dotted;
+  border-color: gray;
+}
+
+.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+  }
+.bg-colour {
+   background-color: #bbf8d5;
+} 
+
+.purple {
+  background-color: #21e721;
+}
+
+.space {
+   display: flex;
+   width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  #background {
+      background-image: url("images/images.jpg");
+      background-color: #65f16c;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #background {
+  background-image: url("images/phamy.jpg"); 
+  background-color: #65f16c;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      float: none;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-colour {
+      color: black;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .slider-mobile {
+      width: 100% !important;
+  }
+}
