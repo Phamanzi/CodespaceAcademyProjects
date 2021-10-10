@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       
+    <textarea  id="textarea" rows="10" cols="50" placeholder="Type your message here" maxlength="50"></textarea>
+    <p id="count">Enter max of 50 characters</p>
+
+  <script>
+    var el_t = document.getElementById('textarea');
+    var length = el_t.getAttribute("maxlength");
+    var el_c = document.getElementById('count');
+    el_c.innerHTML = length;
+    el_t.onkeyup = function () {
+    document.getElementById('count').innerHTML = "character Left : "+( length - this.value.length);
+    };
+    </script>
+     
+      
+</body>
+</html>
